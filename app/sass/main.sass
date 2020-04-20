@@ -1,0 +1,36 @@
+@import "reset"
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #9FA1A5
+
+::selection
+	background-color: $accent
+	color: #fff
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+
+// Blocks
+@import "_blocks/page"
+@import "_blocks/hero-section"
+@import "_blocks/header"
+@import "_blocks/logo"
+@import "_blocks/nav"
+@import "_blocks/buttons"
+@import "_blocks/lang-switcher"
+
+@import "media" // Always at the end

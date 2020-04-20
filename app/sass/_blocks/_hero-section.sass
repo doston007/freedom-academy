@@ -1,0 +1,72 @@
+.hero-section
+	min-height: 100vh
+	height: 100%
+	background-image: url('../img/hero-section-bg.png')
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	display: flex
+	flex-direction: column
+	justify-content: center
+	position: relative
+	padding-top: 134px
+	&__header
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+	&__row
+		align-items: center
+	&__title
+		font-size: 26px
+		color: #fff
+		text-transform: uppercase
+		font-weight: normal
+		margin-bottom: 20px
+		span
+			color: $accent
+			font-weight: bold
+	&__text
+		font-size: 14px
+		color: #fff
+		max-width: 325px
+		margin-bottom: 40px
+	&__button-primary
+		margin-bottom: 20px
+		box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3)
+	&__video-container
+		padding: 30px
+		background-image: url('../img/video-border.png')
+		background-repeat: no-repeat
+		background-position: center center
+		background-size: 100% 100%
+	&__video
+		position: relative
+		cursor: pointer
+		&::after
+			content: ''
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			position: absolute
+			display: inline-block
+			width: 0
+			height: 0
+			border-style: solid
+			border-width: 42.5px 0 42.5px 70px
+			border-color: transparent transparent transparent #DADADA
+	&__btn-scroll
+		display: inline-flex
+		justify-content: center
+		align-items: center
+		background-color: transparent
+		border: none
+		width: 40px
+		height: 12px
+		position: absolute
+		bottom: 50px
+		left: calc(50% - 12px)
+		&:hover
+			cursor: pointer
+
+
